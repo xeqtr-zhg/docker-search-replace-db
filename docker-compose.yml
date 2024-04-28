@@ -1,0 +1,11 @@
+# docker-compose build
+# docker-compose up -d
+
+version: '3.8'
+
+services:
+
+  sr:
+    build: ./docker/search-replace/
+    ports:
+      - '8055:80'
